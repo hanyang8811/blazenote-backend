@@ -3,11 +3,16 @@ main = "src/index.ts"
 compatibility_date = "2024-12-30"
 compatibility_flags = [ "nodejs_compat" ]
 
-# [[d1_databases]]
-# binding = "DB"
-# database_name = "blazenote"
-# database_id = "<DATABASE ID>"
-# migrations_dir = "./migrations"
+# Custom domain configuration
+[[routes]]
+pattern = "blazenote-backend.hanyang8811.work"
+custom_domain = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "blazenote"
+database_id = "5b2bf001-246c-4b4b-84b9-e76f053c5326"
+migrations_dir = "./migrations"
 
 # [ai]
 # binding = "AI"
